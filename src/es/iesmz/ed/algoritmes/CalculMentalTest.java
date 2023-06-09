@@ -10,24 +10,24 @@ public class CalculMentalTest {
     public void test1() {
         String operacion = "15 + 8 - 7 + 10 - 3";
         Integer[] esperado = {15, 23, 16, 26, 23};
-        ArrayList<Integer> resultados1 = new CalculMental(operacion).calcula();
-        Assert.assertArrayEquals(esperado, resultados1.toArray());
+        ArrayList<Integer> resultados = new CalculMental(operacion).calcula();
+        Assert.assertArrayEquals(esperado, resultados.toArray());
     }
 
     @Test
     public void test2() {
         String operacion = "10 + 5 - 3 + 2 - 1";
         Integer[] esperado = {10, 15, 12, 14, 13};
-        ArrayList<Integer> resultados2 = new CalculMental(operacion).calcula();
-        Assert.assertArrayEquals(esperado, resultados2.toArray());
+        ArrayList<Integer> resultados = new CalculMental(operacion).calcula();
+        Assert.assertArrayEquals(esperado, resultados.toArray());
     }
 
     @Test
     public void test3() {
         String operacion = "20 - 10 + 5 + 2 - 7";
         Integer[] esperado = {20, 10, 15, 17, 10};
-        ArrayList<Integer> resultados3 = new CalculMental(operacion).calcula();
-        Assert.assertArrayEquals(esperado, resultados3.toArray());
+        ArrayList<Integer> resultados = new CalculMental(operacion).calcula();
+        Assert.assertArrayEquals(esperado, resultados.toArray());
     }
 
 
